@@ -1,0 +1,35 @@
+---
+title: "Course Project: Shiny Application and Reproducible Pitch"
+author: "Alex Ivanova"
+date: "7/30/2020"
+output: ioslides_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## About the Presentation
+
+The goal of the project is to create a Shiny application and deploy it on Rstudio's servers, and then use Slidify or Rstudio Presenter to prepare a reproducible pitch presentation about the application.
+
+## Data Used
+
+The data used for the regression analysis is a classic mtcars data that was extracted from the 1974 Motor Trend US magazine, and comprises fuel consumption and 10 aspects of automobile design and performance for 32 automobiles (1973–74 models).
+
+```{r looking at data}
+str(mtcars)
+```
+
+## The Main Idea
+
+The app asks you to select the amount of horsepower, according to which it will predict the car's mpg using the regression model.
+The app can be found here: https://alexivanova.shinyapps.io/shinyapp/
+ui.R, and Server.R Code are in my github repository: https://github.com/AlexIvanova/DDP_courseProj
+
+## Plot
+
+The plot for hp ~ mpg looks like this.
+```{r plot}
+plot(hp ~ mpg, mtcars)
+```
